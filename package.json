@@ -1,0 +1,29 @@
+{
+  "name": "exec-headshot-skill",
+  "version": "1.0.0",
+  "description": "高管职业照生成器 - 上传一张照片，生成影棚级高管风职业照/证件照，支持多种风格",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "styles": "node scripts/generate.mjs --list-styles"
+  },
+  "author": "Vivi",
+  "license": "MIT",
+  "keywords": [
+    "headshot",
+    "executive",
+    "portrait",
+    "证件照",
+    "职业照",
+    "claude-code",
+    "skill",
+    "gemini",
+    "gpt-image"
+  ]
+}
