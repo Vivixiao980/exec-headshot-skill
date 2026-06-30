@@ -48,7 +48,12 @@ cd ~/.claude/skills/exec-headshot && npm install --omit=dev
 
 > 帮我生成一张高管风职业照（附上照片）
 
-或直接命令行：
+**两种执行方式（skill 自动分流）：**
+
+- **Codex（推荐，零配置）**：Codex 有原生 GPT Image 能力，直接用风格提示词生成，**无需配置任何 API Key**。
+- **Claude Code / OpenClaw**：模型本体不产图，走下方 `generate.mjs` 脚本 + 外部图像编辑 API（首次需配置一次）。
+
+两条路用的是**同一套 11 个风格提示词**，效果一致。命令行直用：
 
 ```bash
 # 默认（light 轻美颜）
